@@ -1,0 +1,15 @@
+spring:
+    h2: # H2 Setting Info (H2 Console? ???? ?? ???? ??)
+        console:
+            enabled: true  # H2 Console? ???? ?? (H2 Console? H2 Database? UI? ????? ??)
+            path: /h2-console  # H2 Console? Path
+    application:
+        name: CH02_6
+    datasource:
+        url: jdbc:h2:mem:ch02;DB_CLOSE_DELAY=-1
+        driverClassName: org.h2.Driver
+        username: sa
+        password:
+
+    jpa:
+        defer-datasource-initialization: true
